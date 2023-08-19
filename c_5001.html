@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="img_container">
+        <img src="images/download.png" alt="" class="img_logo">
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <a href="http://127.0.0.1:5500/java_lab.html">JAVA LAB</a>
+                </div>
+                <div class="slide">
+                    <a href="http://127.0.0.1:5500/ce_entrance.html">COMPUTER DEPARTMENT</a>
+                </div>
+                <div class="slide">
+                    <a href="http://127.0.0.1:5500/seminar_hall.html">SEMINAR HALL</a>
+                </div>
+                <div class="slide">
+                    <a href="http://127.0.0.1:5500/index.html">CLASSROOM 5012</a>
+                </div>
+                <div class="slide">
+                    <a href="http://127.0.0.1:5500/lobby.html">LOBBY</a>
+                </div>
+                <div class="slide">
+                    <a href="http://127.0.0.1:5500/staff_room.html">STAFF ROOMS</a>
+                </div>
+                <div class="slide">
+                    <a href="http://127.0.0.1:5500/c_5001.html">CLASSROOM 5001</a>
+                </div>
+                <div class="slide">
+                    <a href="http://127.0.0.1:5500/c_5001.html">CLASSROOM 5101</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js" integrity="sha512-uWKImujbh9CwNa8Eey5s8vlHDB4o1HhrVszkympkm5ciYTnUEQv3t4QHU02CUqPtdKTg62FsHo12x63q6u0wmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/panolens.min.js"></script>
+<script>
+    const panoImage = new PANOLENS.ImagePanorama("images/img7.jpg");
+const imageContainer = document.querySelector(".img_container");
+
+const viewer = new PANOLENS.Viewer({
+    container: imageContainer,
+    autoRotate: true,
+    // autoRotateSpeed: 0.9
+});
+viewer.add(panoImage);
+</script>
+</body>
+</html>
